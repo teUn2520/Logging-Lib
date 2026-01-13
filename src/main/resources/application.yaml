@@ -1,0 +1,13 @@
+spring:
+  application:
+    name=logging-library
+
+logging:
+  library:
+    enabled: true
+    level: INFO
+    output: BOTH
+    file-path: "logs/myapp.log"
+    pattern: "[%d] %-5level %logger{10} - %msg%n"
+    max-file-size: 10
+    max-history: 30
